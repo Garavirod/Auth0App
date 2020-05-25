@@ -1,1 +1,6 @@
-<p>protegida works!</p>
+<h1>User Profile</h1>
+<hr>
+<!-- The observable's answer $ is stored as profile-->
+<pre *ngIf="auth.userProfile$ | async as profile">
+    <code>{{ profile | json }}</code>
+</pre>
